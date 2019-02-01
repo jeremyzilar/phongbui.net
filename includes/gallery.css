@@ -1,0 +1,678 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+
+/*
+
+
+//Begin My Own CSS//
+
+
+
+*/
+
+
+.page_container {
+	width: 980px;
+	height: 1000px;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+	color: #787878;
+	font: .75em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+
+
+.nav_bar {
+	height: 30px;
+	list-style: none;
+	width: 980px;
+	
+}
+
+/*begin css for PB logo*/
+#Phong_Bui_logo {
+	color: #396;
+	position: relative;
+	font: 1.4em "Lucida Grande", Lucida, Verdana, sans-serif;
+	float: left;
+	margin-right: 5px;
+	padding-top: 2px;
+	height: 30px;
+}
+
+#Phong_Bui_logo a {
+	text-decoration: none;
+	color: #396;
+}
+
+#Phong_Bui_logo a.selected {
+	color: #bf2026;}
+/*begin css for nav_bar*/
+#nav_bar {
+	list-style: none;
+	height: 10px;
+	padding-top: 2px;
+	width: 980px;
+}
+
+#nav_bar li {
+	float: left;
+	display: block;
+	position: relative;
+}
+
+#nav_bar li a{
+	text-decoration: none;
+	color: #645c5c;
+	font: 1.4em "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-right: 7px;
+
+}
+
+#nav_bar li a:hover {
+	color: #857b7b;
+
+}
+
+#nav_bar li.selected a {
+	color: #bf2026;
+}
+
+/*begin css for sub_nav*/
+
+
+.sub_nav {
+	width: 980px;
+	height: 15px;
+	margin-top: 2px;
+	word-spacing: ;
+	list-style: none;
+	border-bottom: 1px solid grey;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+
+.sub_nav li {
+	float: left;
+}
+
+.sub_nav li a {
+	text-decoration: none;
+	color: #645c5c;
+	margin-right: 8px;
+}
+
+.sub_nav li a:hover {
+	color: #857b7b;	
+}
+
+.sub_nav li.selected a {
+	color:#bf2026;
+}
+
+.sub_nav_wop {
+	width: 980px;
+	height: 15px;
+	margin-top: 2px;
+	margin-left: ;
+	word-spacing: ;
+	list-style: none;
+	border-bottom: 1px solid grey;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+
+.sub_nav_wop li {
+	float: left;
+	margin-right: 8px;
+}
+
+.sub_nav_wop li a {
+	text-decoration: none;
+	color: #645c5c;	
+}
+
+.sub_nav_wop li a:hover {
+	color: #857b7b;	
+}
+
+.sub_nav_wop li.selected a {
+	color:#bf2026;
+}
+
+
+/* CSS for Gallery */
+
+.gallery_content {
+	margin-top: 25px;
+	height: 560px;
+}
+
+.gallery_thumbnails {	
+	margin-left: px;
+	height: 560px;
+	width: 380px;
+	float: left;
+}
+
+
+.gallery_thumbnails a {
+	display: block;
+	width: 75px;
+	height: 75px;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	opacity: .7;
+	}
+	
+.gallery_thumbnails a:hover {
+	border: 1px solid #474747;
+}
+
+.gallery_thumbnails a.selected {
+	border: 1px solid #474747;
+	}
+
+a img {
+	border: none;
+}
+
+.gallery_preview {
+	height: 560px;
+	width: 580px;
+	float: left;
+	margin-left: 15px;
+
+}
+
+.gallery_preview a {
+	height: 560px;
+	width: 580px;
+	padding: 0;
+	margin: 0;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_preview a:hover {
+	
+}
+
+.gallery_caption {
+	margin-top: 5px;
+	margin-left: 380px;
+	width: 580px;	
+	font: .8em "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-align: center;
+}
+
+.clear_both {
+	line-height: 1px;
+	clear: both;
+}
+
+.gallery_preload_area {
+	display: none;
+}
+
+/*gallery_2 css*/
+
+.gallery_2_content {
+	margin-top: 25px;
+	height: 560px;
+}
+
+.gallery_2_thumbnails {	
+	margin-left: px;
+	height: 560px;
+	width: 980px;
+}
+
+
+.gallery_2_thumbnails a {
+	display: block;
+	width: 75px;
+	height: 75px;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 21px;
+	margin-bottom: 21px;
+	opacity: .7;
+	}
+	
+.gallery_2_thumbnails a:hover {
+	border: 1px solid #474747;
+}
+
+.gallery_2_thumbnails a.selected {
+	border: 1px solid #474747;
+	}
+
+
+/*book_gallery*/
+.book_content {
+	margin-top: 25px;
+	display: block;
+	float: left;
+	margin-right: 100px;
+	
+}
+
+.book_thumbnails {	
+	width: 300px;
+	float: left;
+	padding-right: 
+}
+
+.book_thumbnails a {
+	display: block;
+	width: 75px;
+	height: 75px;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 21px;
+	margin-bottom: 21px;
+	opacity: .7;
+	}
+	
+.book_thumbnails a:hover {
+	border: 1px solid #474747;
+}
+
+.book_thumbnails a.selected {
+	border: 1px solid #474747;
+	}
+
+.title1 {
+	height: 50px;
+	width: 280px;
+	font: .8em "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-align: center;
+}
+
+.title2 {
+	height: 50px;
+	width: 300px;
+	margin-left: 380px;
+	margin-top: -330px;
+	font: .8em "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-align: center;
+}
+
+/* begin installation pages css*/
+
+.sub_nav_installation {
+	width: 980px;
+	height: 15px;
+	margin-top: 2px;
+	word-spacing: ;
+	list-style: none;
+	border-bottom: 1px solid grey;
+}
+
+.sub_nav_installation li {
+	float: left;
+	margin-right: 8px;
+}
+
+.sub_nav_installation li a {
+	text-decoration: none;
+	color: #645c5c;	
+}
+
+.sub_nav_installation li a:hover {
+	color: #857b7b;	
+}
+
+.sub_nav_installation li.selected a {
+	color:#bf2026;
+}
+
+/*css for installation pages*/
+
+#install_content_box {
+	margin-top: 25px;
+	width: 980px;
+	display: inline-table;
+}
+
+.thm_box {
+	float:left;
+	width: 980px;
+	padding-bottom: 50px;
+}
+
+.thm_box a {
+	display: block;
+	float: left;
+	height: 100px;
+	margin-right: 20px;
+	margin-top: 20px;
+	border: 1px solid #c3c3c3;
+}
+
+/*installation titles*/
+.title {
+	text-decoration: none;
+	color: #000;
+	text-align: left;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+/*biography*/
+.bio_box {
+	width: 980px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+	min-height: 200px;
+	padding-bottom: 100px;
+}
+
+h1 {
+	margin-top: 25px;
+	margin-bottom: -8px;
+	color: #bf2026;
+	font: bold 1.65em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+h2 {
+	margin-bottom: 4px;
+	margin-top: 12px;
+	color: #000;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+
+}
+
+p#info {
+	color: #545454;
+	text-decoration: none;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-left:0px;
+	}
+
+p {
+	color: #545454;
+	text-decoration: none;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-left:15px;
+}
+
+.bio_box a {
+	text-decoration: underline;
+	color: #000;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+span {
+	font-style: italic;
+}
+
+ul#biography_list {
+	margin-left:15px;
+}
+
+ul#biography_list li {
+	color: #545454;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+
+/*links*/
+
+.news {
+	clear:both;
+	display:block;
+	padding-top: 20px;
+	padding-bottom:20px
+	}
+
+
+.news p {
+	font-size:14px;
+	line-height: 18px;
+	}
+
+
+.news a {
+	text-decoration:none;
+	color:#333;}
+
+h2 {
+	color: #bf2026;
+	font: 1.4em "Lucida Grande", Lucida, Verdana, sans-serif;
+	}
+
+.links a {
+	margin-top: 10px;
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.links a:hover {
+	color: #bf2026;
+	}
+
+/*contact*/
+
+ul#info li {
+	margin-top: 10px;
+	color: #545454;
+	font: .95em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+ul#info a {
+	text-decoration: none;
+	color: #545454;
+
+}
+
+/*writing*/
+
+ul#writing_list {
+
+}
+
+ul#writing_list li {
+	margin-top: 5px;
+	color: #545454;
+	font: .95em "Lucida Grande", Lucida, Verdana, sans-serif;
+
+}
+
+ul#writing_list li a {
+	color: #545454;
+	text-decoration: none;
+}
+
+ul#writing_list li a:hover {
+	color: #bf2026;
+}
+
+/*portraits*/
+
+.portrait_content {
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom:75px;
+}
+
+.portrait_year {
+	color: #bf2026;
+	font: 1.3em "Lucida Grande", Lucida, Verdana, sans-serif;
+	clear: left;}
+
+.portrait_thumbnails {
+	margin-top: 5px;
+}
+
+.portrait_thumbnails p {
+	color: #bf2026;
+	font: 1.4em "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding-bottom: 5px;
+	height: 15px;
+	width: 100%;
+	margin-left: 0px;
+	margin-top: -20px;
+	vertical-align: bottom;
+	text-align: left;
+}
+
+.portrait_thumbnails a {
+	display: block;
+	float: left;
+	width: 235px;
+	height: 309px;
+	margin-right: 8px;
+	margin-bottom: 38px;
+	text-decoration: none;
+	color: #545454;
+	text-align: center;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.portrait_thumbnails a:hover {
+	color: #bf2026;
+}
+.portrait_horizontal {
+	margin-top: 5px;
+}
+
+.portrait_horizontal a {
+	display: block;
+	float: left;
+	width: 470px;
+	height: 309px;
+	margin-right: 8px;
+	margin-bottom: 38px;
+	text-decoration: none;
+	color: #545454;
+	text-align: center;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.portrait_horizontal a:hover {
+	color: #bf2026;
+}
+
+
+.portrait_johnny {
+	margin-top: 5px;
+}
+
+.portrait_johnny a {
+	display: block;
+	float: left;
+	width: 470px;
+	height: 309px;
+	margin-right: 8px;
+	margin-bottom: 38px;
+	text-decoration: none;
+	color: #545454;
+	text-align: center;
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.portrait_johnny a:hover {
+	color: #bf2026;
+}
+
+footer {
+	margin-top: 25px;
+	padding-top: 10px;
+	width: 980px;
+	height: 30px;
+	border-top: 1px solid #0c0c0c;
+	text-align: center;
+	font-size: .9em;
+}

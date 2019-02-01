@@ -1,0 +1,165 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*
+
+
+//Begin My Own CSS//
+
+}
+
+
+*/
+.page_container {
+	width: 980px;
+	height: 1000px;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+	color: #787878;
+	font: .75em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+
+.backgroundimg {
+	position: relative;
+	display: block;
+	clear: both;
+	float: right;
+	margin-top: 10px;
+}
+
+.nav_bar {
+	height: 30px;
+	list-style: none;
+	width: 980px;	
+}
+
+/*begin css for PB logo*/
+#Phong_Bui_logo {
+	color: #bf2026;
+	position: relative;
+	font: 1.4em "Lucida Grande", Lucida, Verdana, sans-serif;
+	float: left;
+	margin-right: 5px;
+	padding-top: 2px;
+	height: 30px;
+}
+
+#Phong_Bui_logo a {
+	text-decoration: none;
+	color: #bf2026;
+}
+
+#Phong_Bui_logo a.selected {
+	color: #bf2026;}
+
+/*begin css for nav_bar*/
+#nav_bar {
+	list-style: none;
+	height: 10px;
+	padding-top: 2px;
+	width: 980px;
+
+}
+
+#nav_bar li {
+	float: left;
+	display: block;
+	position: relative;
+}
+
+#nav_bar li a{
+	text-decoration: none;
+	color: #396;
+	font: 1.4em "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-right: 7px;
+}
+
+#nav_bar li a:hover {
+	color: #857b7b;
+}
+
+.news {
+	clear:both;
+	display:block;
+	padding-top: 20px;
+	padding-bottom:20px
+	}
+
+
+.news p {
+	font-size:14px;
+	line-height: 18px;
+	}
+
+
+.news a {
+	text-decoration:none;
+	color:#333;}
+
+h2 {
+	color: #bf2026;
+	font: 1.4em "Lucida Grande", Lucida, Verdana, sans-serif;
+	}
+
+footer {
+	display: block;
+	clear: both;
+	float: right;
+	margin-top: 25px;
+	padding-top: 10px;
+	width: 980px;
+	height: 30px;
+	text-align: center;
+	font-size: .9em;
+}
